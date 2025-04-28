@@ -43,15 +43,23 @@ public class Locators {
         String errorMessage = driver.findElement(By.cssSelector("p.error")).getText();
         System.out.println(errorMessage);
 
-        // Click on the "Forgot your password?" link using linkText locator
+        // 5. Click on the "Forgot your password?" link using linkText locator
         driver.findElement(By.linkText("Forgot your password?")).click();
 
-        // Enter the Name in the input field located by XPath (using placeholder attribute)
+        // 6. Enter the Name in the input field located by XPath (using placeholder attribute)
         // Note: 'name' in XPath should match exactly with placeholder value
         // <input type="text" placeholder="Name" css="1">
-        driver.findElement(By.xpath("//input[@placeholder='name']")).sendKeys("user01");
+        driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("user2");
 
-        // Enter the Email in the input field located by CSS Selector (using placeholder attribute)
-        driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("user01@email.com");
+        // 7. Enter the Email in the input field located by CSS Selector (using placeholder attribute)
+        driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("user2@email.com");
+        driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
+
+        // Locate the third input element of type 'text' using CSS Selector and enter an email address
+        driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("user3@email.com");
+
+
+        //input[@type='text'][2]
+
     }
 }

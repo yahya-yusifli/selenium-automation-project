@@ -8,7 +8,7 @@ import java.time.Duration;
 
 public class Locators {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // Set the path to the ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "/Users/yahyayusifli/Documents/chromedriver-mac-arm64/chromedriver");
@@ -46,6 +46,8 @@ public class Locators {
         // 5. Click on the "Forgot your password?" link using linkText locator
         driver.findElement(By.linkText("Forgot your password?")).click();
 
+        Thread.sleep(1000);
+
         // 6. Enter the Name in the input field located by XPath (using placeholder attribute)
         // Note: 'name' in XPath should match exactly with placeholder value
         // <input type="text" placeholder="Name" css="1">
@@ -53,13 +55,28 @@ public class Locators {
 
         // 7. Enter the Email in the input field located by CSS Selector (using placeholder attribute)
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("user2@email.com");
-        driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
+        driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
 
         // Locate the third input element of type 'text' using CSS Selector and enter an email address
         driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("user3@email.com");
 
+        // Locate the third input element in the form and enter the phone number
+        driver.findElement(By.xpath("//form/input[3]")).sendKeys("4129991100");
 
-        //input[@type='text'][2]
+        // Find the button with class 'reset-pwd-btn' and click it to submit the reset request
+        driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+
+        // Retrieve the text from the paragraph inside the form and print it to the console
+        System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+
+        driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.cssSelector("#inputUsername")).sendKeys("user3");
+        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+        driver.findElement(By.id("chkboxOne")).click();
+        //Regular expression
+        driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+
 
     }
 }

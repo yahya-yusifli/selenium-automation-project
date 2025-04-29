@@ -70,7 +70,7 @@ public class Locators {
         System.out.println(driver.findElement(By.cssSelector("form p")).getText());
 
         driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
-        Thread.sleep(1000);
+        Thread.sleep(1000); // explicit wait
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys("user3");
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
         driver.findElement(By.id("chkboxOne")).click();

@@ -33,6 +33,22 @@
             <version>7.11.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- in your pom.xml -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v123</artifactId>
+            <version>4.19.0</version>
+        </dependency>
+
+        <!-- in your pom.xml -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v135</artifactId>
+            <version>4.31.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

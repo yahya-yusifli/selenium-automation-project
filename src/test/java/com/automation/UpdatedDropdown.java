@@ -25,10 +25,25 @@ public class UpdatedDropdown {
         System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
         Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 
-        driver.findElement(By.xpath("//a[@class='ui-state-default ui-state-active']")).click();
+        ///CALENDAR
 
+        //System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+        System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
+        // make it round trip
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
-        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
+        System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
+
+        if (driver.findElement(By.id("Div1")).getDomAttribute("style").contains("1")) {
+            System.out.println("its enabled");
+            Assert.assertTrue(true);
+        } else {
+            Assert.assertTrue(false);
+        }
+
+        //driver.findElement(By.xpath("//a[@class='ui-state-default ui-state-active']")).click();
+
+        //driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+        //driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
 
 
 

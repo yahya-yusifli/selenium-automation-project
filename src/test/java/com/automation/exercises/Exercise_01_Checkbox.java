@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.exercises;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

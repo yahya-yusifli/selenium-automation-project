@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.exercises;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Iterator;
 import java.util.Set;
 
-public class WindowHandles_exercise_01 {
+public class Exercise_05_WindowHandles {
 
     public static void main(String[] args) {
 

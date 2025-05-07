@@ -1,13 +1,13 @@
 package com.automation;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowActivities_Navigation {
 
     public static void main(String[] args) {
-        // SeleniumManager (Beta phase)
-        System.setProperty("webdriver.chrome.driver", "/Users/yahyayusifli/Documents/chromedriver-mac-arm64/chromedriver");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         // Maximize the browser window to full screen

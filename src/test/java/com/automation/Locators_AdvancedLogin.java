@@ -1,5 +1,6 @@
 package com.automation;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,13 +13,14 @@ public class Locators_AdvancedLogin {
     public static void main(String[] args) throws InterruptedException {
         String name = "user";
 
-        System.setProperty("webdriver.chrome.driver", "/Users/yahyayusifli/Documents/chromedriver-mac-arm64/chromedriver");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         String password = getPassword(driver);
 
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
+
         driver.findElement(By.id("inputUsername")).sendKeys(name);
         driver.findElement(By.name("inputPassword")).sendKeys(password);
         driver.findElement(By.className("signInBtn")).click();

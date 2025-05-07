@@ -13,7 +13,7 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Scope {
+public class Scope_LinksAndTabs {
 
     public static void main(String[] args) throws InterruptedException {
 

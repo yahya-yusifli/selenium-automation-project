@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 import java.util.List;
 
-public class CalendarTest {
+public class Calendar_Component {
 
     public static void main(String[] args) {
 

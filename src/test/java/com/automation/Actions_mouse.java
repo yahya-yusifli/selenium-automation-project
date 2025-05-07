@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import javax.swing.JOptionPane;
 import java.time.Duration;
 
-public class Actions_01 {
+public class Actions_mouse {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "/Users/yahyayusifli/Documents/chromedriver-mac-arm64/chromedriver");
         WebDriver driver = new ChromeDriver();

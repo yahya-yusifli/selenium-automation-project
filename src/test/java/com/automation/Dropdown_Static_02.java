@@ -7,7 +7,7 @@ import org.testng.Assert;
 // TestNG is one of the testing framework
 
 
-public class UpdatedDropdown {
+public class Dropdown_Static_02 {
 
     public static void main(String[] args) throws InterruptedException {
 

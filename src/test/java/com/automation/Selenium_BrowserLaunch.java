@@ -1,11 +1,9 @@
 package com.automation;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class SeleniumIntroduction {
+public class Selenium_BrowserLaunch {
     public static void main(String[] args) {
         /// Chrome Launch
         // webdriver.chrome.driver

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Wait;
 import java.time.Duration;
 import java.util.function.Function;
 
-public class FluentWaitTest {
+public class Wait_Fluent {
 
     public static void main(String[] args) {
 

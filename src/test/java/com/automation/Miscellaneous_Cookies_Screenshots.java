@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.File;
 import java.io.IOException;
 
-public class Miscellaneous {
+public class Miscellaneous_Cookies_Screenshots {
     public static void main(String[] args) throws IOException {
 
         WebDriverManager.chromedriver().setup();

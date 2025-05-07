@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Iterator;
 import java.util.Set;
 
-public class WindowHandles {
+public class WindowHandles_MultipleWindows {
 
     public static void main(String[] args) {
 

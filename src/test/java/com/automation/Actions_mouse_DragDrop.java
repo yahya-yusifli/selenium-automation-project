@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Actions_02_DragDrop {
+public class Actions_mouse_DragDrop {
 
     public static void main(String[] args) throws InterruptedException {
 

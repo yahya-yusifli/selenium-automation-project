@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class Scroll_WebTableFixedHeader_02 {
+public class Scroll_WebTable {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();

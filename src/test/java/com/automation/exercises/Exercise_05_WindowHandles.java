@@ -29,7 +29,7 @@ public class Exercise_05_WindowHandles {
         driver.switchTo().window(parenID);
         System.out.println(driver.findElement(By.cssSelector("div.example h3")).getText());
 
-        driver.quit();
+
 
 
 

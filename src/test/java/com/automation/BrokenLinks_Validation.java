@@ -1,4 +1,4 @@
-package com.automation.exercises;
+package com.automation;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -12,7 +12,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
-public class BrokenLinks {
+public class BrokenLinks_Validation {
 
     public static void main(String[] args) throws IOException {
         WebDriverManager.chromedriver().setup();

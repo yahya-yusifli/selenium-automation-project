@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class SuggestionClassExample {
+public class Dropdown_AutoSuggestive_02 {
 
     public static void main(String[] args) throws InterruptedException {
 

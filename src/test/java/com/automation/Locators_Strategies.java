@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Locators {
+public class Locators_Strategies {
 
     public static void main(String[] args) throws InterruptedException {
 

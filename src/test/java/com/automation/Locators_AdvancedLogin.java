@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class Locators_02 {
+public class Locators_AdvancedLogin {
 
     public static void main(String[] args) throws InterruptedException {
         String name = "user";

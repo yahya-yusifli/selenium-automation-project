@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class StaticDropDown {
+public class Dropdown_Static_01 {
 
     public static void main(String[] args) {
 
